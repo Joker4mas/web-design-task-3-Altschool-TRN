@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Space Mono', monospace;
+ */
+body {
+    background-color: hsl(180, 60%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* the styling for skip navigation */
+#skip-nav {
+    position: absolute;
+    padding: 0.5rem 1.5rem;
+    left: .5rem;
+    margin-bottom: .5rem;
+    background: rgb(12, 21, 12);
+    border: 2px solid rgb(231, 150, 11);
+    transform: translateY(-215%);
+    transition: transform 325ms ease-in;
+}
+
+/* the styling for skip navigation */
+
+#skip-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* the styling for skip navigation */
+
+#skip-nav:focus {
+    transform: translateY(0);
+    transition: transform 0.4s;
+}
+
+main {
+    margin: 0 auto;
+}
+
+/* styling for the container goes here */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 5px auto;
+}
+
+/* left section that contains the write up */
+.left-section {
+    width: 40%;
+    margin: 0 1.5rem;
+    /* border: 2px solid orangered; */
+}
+
+.logo img {
+    align-items: start;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.write-up {
+    color: rgb(164, 163, 163);
+}
+
+.mobile-text {
+    display: none;
+}
+
+/* logo styling goes here */
+
+/* Right section styling of the form */
+#form {
+    width: 80%;
+    padding: 1.5rem;
+    box-shadow: 20px 10px 20px 10px rgb(224, 229, 229);
+    margin-left: 5rem;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* margin: 1rem ; */
+}
+
+#form input {
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+
+}
+
+#form input:active {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+#form input:focus {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+.gender,
+.activity-level,
+.pass {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gender select {
+    padding: .4rem;
+    outline: none;
+}
+
+.gender select:active {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+.gender select:focus {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+.activity-level select {
+    padding: .4rem;
+    outline: none;
+}
+
+.activity-level select:active {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+.activity-level select:focus {
+    border: 2px solid rgb(41, 189, 169);
+}
+
+.pass,
+.activity-level {
+    margin: 1rem 0 0 0;
+}
+
+.passx{
+    /* border: 2px solid red; */
+    position: relative;
+}
+.fa-eye{
+    position: absolute;
+    right: 2%;
+    padding: .5rem ;
+    color: rgb(164, 163, 163);
+    cursor: pointer;
+}
+
+
+#btn-reg {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    padding: .6rem;
+    color: aliceblue;
+    background-color: #2EC4B6;
+    border: none;
+    cursor: pointer;
+}
+
+#terms {
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+
+/* mobile design  */
+@media (max-width: 370px) {
+
+    /* container design for mobile */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin: 5px auto;
+    }
+
+    /* mobile design for left section */
+    .left-section {
+        width: 100%;
+        margin: 0 .5rem;
+        /* border: 2px solid orangered; */
+    }
+
+    .logo img {
+        width: 60px;
+        align-items: start;
+    }
+
+    .heading{
+        padding: .5rem;
+    }
+    .desk-text {
+        display: none;
+        color: rgb(164, 163, 163);
+    }
+
+    .mobile-text {
+        display: flex;
+        padding: .5rem;
+        color: rgb(164, 163, 163);
+    }
+
+    #form {
+        width: 95%;
+        padding: 1rem;
+        box-shadow: 5px 10px 5px 10px rgb(224, 229, 229);
+        margin: .5rem auto;
+    }
+
+}

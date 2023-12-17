@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Poppins:ital,wght@0,300;1,200&family=Space+Mono:ital@0;1&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Development Training</title>
+</head>
+<body>
+    <div id="skip-nav">
+    <a href="#main">Skip Navigation</a>
+    </div>
+    <!-- main page starts here -->
+    <main id="main">
+    <!-- main content starts here -->
+    <div class="container">
+        <div class="left-section">
+          <!-- logo div goes here which contain the left section information -->
+          <div class="logo">
+            <!-- image goe into the image tag -->
+            <img src="/Web Development Training/asset/Logo.png" alt="" />
+          </div>
+
+          <h2 class="heading">For Individuals</h2>
+
+          <!-- main topic of the page -->
+          <div class="write-up">
+            <!-- write ups goes here -->
+            <p class="desk-text">
+              Start benefiting from wellness experience. For companies looking
+              on improving productivity, and improving organization wellness.
+            </p>
+            <p class="mobile-text">
+                Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+            </p>
+          </div>
+        </div>
+
+        <!-- form goes here -->
+        <div id="right-section">
+        <form action="#" id="form">
+            <div class="detail">
+            <div class="firstName">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" />
+            </div>
+            <div class="lastName">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" />
+            </div>
+
+            <div class="gender">
+            <!-- gender element goes here -->
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                  <option value="Select">Select here</option>
+                  <option value="Male">Male</option>
+                  <option value="female">female</option>
+                </select>
+            </div>
+
+            <!-- div containing date of birth -->
+            <div class="dateOfBirth">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" placeholder="Select here" />
+            </div>
+
+            <!-- weight element code goes here -->
+            <div class="weight">
+                <label for="weight">Weight (KG)</label>
+                <input
+                  type="text"
+                  id="weight"
+                  placeholder="Enter Weight here"
+                />
+            </div>
+
+            <!-- height element goes here -->
+            <div class="height">
+                <label for="height">Height (CM)</label>
+                <input
+                  type="text"
+                  id="height"
+                  placeholder="Enter Height here"
+                />
+            </div>
+
+            <!-- top form section ends here -->
+            </div>
+
+            <!-- bottom form elements starts here-->
+            <div class="bottom-form">
+
+            <!-- activity level element starts here -->
+            <div class="activity-level">
+                <label for="activity">Activity Level</label>
+                <select name="activity" id="activity-level">
+                  <option value="select">select here</option>
+                </select>
+            </div>
+
+                <!-- password element goes here -->
+            <div class="pass">
+                <label for="password">Password</label>
+                <div class="passx">
+                    <input type="password" name="password" id="password" />
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!-- register element goes here  -->
+            <div class="reg">
+                <input type="button" value="Register" id="btn-reg" />
+            </div>
+
+            <!-- form bottom elements end here -->
+            </div>
+
+            <!-- terms and condition goes here -->
+            <p id="terms">
+              By clicking register you agree to our
+              <a href="#">Terms of use </a> and our
+              <a href="#">Privacy policy</a>
+            </p>
+        
+            <!-- form ends here -->
+        </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
